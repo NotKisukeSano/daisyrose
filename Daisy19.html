@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE QUEEN IS 19!!!</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.google.com/specimen/Lobster" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+  <style>
+    h1 {
+      font-size: 100px;
+      text-align: center;
+      color: #FF69B4;
+      font-family: 'Lobster', cursive;
+      text-transform: uppercase;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0;
+    }
+
+
+    body {
+      margin: 0;
+      height: 100vh;
+      position: relative;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+
+    .roses-background {
+
+      background: url('roses-background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      height: 100%;
+    }
+
+
+  </style>
+</head>
+<div class="gif-container">
+  <img src="melody.gif" alt="My Melody">
+</div>
+
+<div class="gif-container2">
+  <img src="cake.GIF" alt="Birthday Cake">
+</div>
+
+<body>
+  <h1>HAPPY BIRTHDAY 🥳DAISY!!!🥳</h1>
+  <div class="roses-background"></div>
+
+  <button id="myButton" onclick="playSound()"></button>
+
+  <audio id="mySound">
+    <source src="YippeeSound.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <script>
+    function playSound() {
+      var audio = new Audio('YippeeSound.mp3');
+      audio.volume = 0.2;
+      audio.play();
+    }
+  </script>
+  <div style="position: relative;">
+
+      <img src="arrow.png" width="385" height="200" style="position: absolute; left: -650px; top: -10px;">
+</div>
+<div style="
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-200%, 150%);
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Lobster', cursive;">
+        CLICK HERE!!!
+    </div>
+
+<div style="
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-220%, 750%);
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Lobster', cursive;">
+            LOOK AT THIS DIVA👀!!!
+</div>
+
+<div style="
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -100%);
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Lobster', cursive;">
+            YIPPEE!!!
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

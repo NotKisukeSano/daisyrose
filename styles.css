@@ -1,0 +1,172 @@
+/* Apply styles to body and ensure it's full-screen */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(45deg, #ff99cc, #ff6699, #ff99cc, #ff6699);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  color: white; /* Adjust text color for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+button {
+  background-image: url('yippee.png');
+  background-size: cover; /* Ensure the image covers the button */
+  background-position: center; /* Center the image */
+  border: none; /* Remove border */
+  color: white; /* Text color (if any) */
+  font-size: 16px; /* Text size */
+  width: 300px; /* Button width */
+  height: 200px; /* Button height */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  padding: 10px;
+  border-radius: 15px;
+  border: 5px solid #D5006D;
+  margin-top: 200px;
+}
+
+.gif-container {
+  position: fixed;  /* Fix the position to the screen */
+  bottom: -5px;  /* 20px from the bottom */
+  left: 1px;    /* 20px from the left */
+  width: auto;   /* Let the width adjust automatically */
+  height: auto;  /* Let the height adjust automatically */
+  z-index: 9999; /* Ensure it's on top of other content */
+}
+
+.gif-container img {
+  width: 330px;  /* Set a width for the GIF */
+  height: auto;  /* Maintain aspect ratio */
+}
+.gif-container2{
+  position: fixed;  /* Fix the position to the screen */
+  bottom: 475px;  /* 20px from the bottom */
+  left: 1px;    /* 20px from the left */
+  width: auto;   /* Let the width adjust automatically */
+  height: auto;  /* Let the height adjust automatically */
+  z-index: 9999; /* Ensure it's on top of other content */
+}
+.gif-container2 img{
+  width: 450px;
+  height: auto;
+}
+/* Optional: Add hover effect */
+button:hover {
+  opacity: 0.8; /* Slight opacity change on hover */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 50px 30px;
+  color: #fff;
+  background-color: #030303;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(45deg, #ff99cc, #ff6699, #ff99cc, #ff6699);
+  box-shadow: 0 0 10px 3px #ff6699;
+  border: 5px solid #ff6699; /* Pink border */
+  background-color: black; /* Solid background color for the box (non-transparent) */
+  -webkit-text-stroke: 1.5px #D5006D; /* Dark text outline */
+
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #FF69B4;
+  animation: animate-gradient 2.5s linear infinite;
+
+  padding: 20px; /* Adds padding inside the box */
+}
+
+.pink-box {
+  background-color: #ff99cc;  /* Solid pink background */
+  border: 5px solid #ff6699;  /* Pink border around the box */
+  padding: 20px 50px;  /* Space inside the box (top/bottom, left/right) */
+  font-size: 50px;  /* Large font size for text */
+  font-family: 'Pacifico', sans-serif;  /* Simple font */
+  color: #ffffff;  /* White text color */
+  text-align: center;  /* Center the text inside */
+  text-transform: uppercase;  /* Make text uppercase */
+  box-shadow: 0 0 15px 5px #ff6699;  /* Optional: Glow effect around the box */
+  position: absolute;  /* Positioning the box absolutely */
+  top: 0;  /* Place it at the very top of the page */
+  left: 50%;  /* Position the box in the center horizontally */
+  transform: translateX(-50%);  /* Adjust the position by moving it back left by 50% of its width */
+}
+
+
+@keyframes animate-gradient {
+  to {
+    background-position: 200%;
+  }
+}
+
+
+p {
+  font-size: 1.5em;
+}
+
+/* Keyframes for the gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.rose {
+  position: absolute;
+  width: 75px; /* Default size for roses */
+  height: 100px;
+  background-image: url('rose.png'); /* Replace with your image file */
+  background-size: cover;
+  opacity: 0.8;
+  top: -150px;
+  z-index: 99999;
+
+  /* Apply both falling and rotating animations */
+  animation:
+    fall 10s linear infinite,  /* Falling animation (10s duration) */
+    rotate 10s linear infinite; /* Continuous rotating animation */
+}
+
+/* Keyframes for falling animation */
+@keyframes fall {
+  from {
+    top: -150px; /* Start above the screen */
+  }
+  to {
+    top: 100vh; /* End below the screen */
+  }
+}
+
+/* Keyframes for rotating animation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* Start with no rotation */
+  }
+  to {
+    transform: rotate(360deg); /* Full rotation */
+}
